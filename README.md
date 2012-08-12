@@ -26,7 +26,7 @@ Running
 The 'runexample.sh' script shows how to run a basic learning and program
 selection procedure using the SBT framework.  The learning procedure is
 associated with a variety of genetic algorithm parameters that can be
-customized in each example's '.params' file.  Please see the EJC documentation
+customized in each example's '.params' file.  Please see the ECJ documentation
 (ECJ link) for more information on what these parameters mean.
 
 To Do
