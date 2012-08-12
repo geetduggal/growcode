@@ -15,10 +15,8 @@ Appear: Proc. 18th Intl. Conference on Knowledge Discovery and Data Mining
 Requirements
 ------------
 
-For the runnable jar (growcode.jar):
-* Java 1.6 or greater
-
 For building and editing source:
+* Java 1.6 or greater
 * Scala 2.9.1 or greater. (http://scala-lang.org)
 * Simple Build Tool (SBT) 
 
