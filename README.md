@@ -10,7 +10,7 @@ missing models: a data driven approach for learning how networks grow. To
 Appear: Proc. 18th Intl. Conference on Knowledge Discovery and Data Mining
 (KDD) 2012. 
 
-+ Equal contributions
+\+ Equal contributions
 
 Requirements
 ------------
