@@ -32,6 +32,6 @@ customized in each example's '.params' file.  Please see the EJC documentation
 To Do
 -----
 
-* Comment source code more formally
 * Make the network properties tested in BestProgramProblem.scala selectable via
   a config file or command line interface
+* Add a runnable jar to the repo
