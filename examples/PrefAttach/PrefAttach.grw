@@ -1,0 +1,27 @@
+; GROWCODE
+rnode
+detach
+rnode
+scoin 0.12510872
+infl 0.7862678
+set 3
+create
+redge
+swap
+swap
+attach
+save
+load
+new
+create
+rnode
+redge
+scoin 0.6249518
+attach
+set 9
+create
+rnode
+clear
+load
+create
+attach

@@ -1,0 +1,368 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: T
+Fitness: [0.9552994 0.1489184 0.9649903 max]
+R=0 S=Infinity
+ create
+ new
+ scoin 0.6249518
+ detach
+ infl 0.96328866
+ rnode
+ infl 0.84080964
+ rewind 3,1
+ attach
+ create
+
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: T
+Fitness: [0.9552994 0.1489184 0.9649903 max]
+R=0 S=Infinity
+ create
+ new
+ scoin 0.6249518
+ detach
+ infl 0.96328866
+ rnode
+ infl 0.84080964
+ rewind 3,1
+ attach
+ create
+
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: T
+Fitness: [0.9552994 0.1489184 0.9649903 max]
+R=0 S=Infinity
+ create
+ new
+ scoin 0.6249518
+ detach
+ infl 0.96328866
+ rnode
+ infl 0.84080964
+ rewind 3,1
+ attach
+ create
+
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: T
+Fitness: [0.9552994 0.1489184 0.9649903 max]
+R=0 S=Infinity
+ create
+ new
+ scoin 0.6249518
+ detach
+ infl 0.96328866
+ rnode
+ infl 0.84080964
+ rewind 3,1
+ attach
+ create
+
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: T
+Fitness: [0.9552994 0.1489184 0.9649903 max]
+R=0 S=Infinity
+ create
+ new
+ scoin 0.6249518
+ detach
+ infl 0.96328866
+ rnode
+ infl 0.84080964
+ rewind 3,1
+ attach
+ create
+
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: T
+Fitness: [0.98020875 0.10549241 0.92007935 max]
+R=0 S=Infinity
+ rnode
+ create
+ create
+ load
+ set 3
+ set 1
+ create
+ attach
+ swap
+ swap
+ set 7
+ rewind 10,1
+ load
+ rewind 1,8
+ new
+ clearinf
+ save
+ load
+ rnode
+
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: T
+Fitness: [0.98020875 0.10549241 0.92007935 max]
+R=0 S=Infinity
+ rnode
+ create
+ create
+ load
+ set 3
+ set 1
+ create
+ attach
+ swap
+ swap
+ set 7
+ rewind 10,1
+ load
+ rewind 1,8
+ new
+ clearinf
+ save
+ load
+ rnode
+
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: T
+Fitness: [0.98020875 0.10549241 0.92007935 max]
+R=0 S=Infinity
+ rnode
+ create
+ create
+ load
+ set 3
+ set 1
+ create
+ attach
+ swap
+ swap
+ set 7
+ rewind 10,1
+ load
+ rewind 1,8
+ new
+ clearinf
+ save
+ load
+ rnode
+
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: T
+Fitness: [0.98020875 0.10549241 0.92007935 max]
+R=0 S=Infinity
+ rnode
+ create
+ create
+ load
+ set 3
+ set 1
+ create
+ attach
+ swap
+ swap
+ set 7
+ rewind 10,1
+ load
+ rewind 1,8
+ new
+ clearinf
+ save
+ load
+ rnode
+
+
+Generation: 9
+Best Individual:
+Subpopulation 0:
+Evaluated: T
+Fitness: [0.9529584 0.27351984 0.8682165 max]
+R=0 S=Infinity
+ rnode
+ detach
+ rnode
+ scoin 0.12510872
+ infl 0.7862678
+ set 3
+ create
+ redge
+ swap
+ swap
+ attach
+ save
+ load
+ new
+ create
+ rnode
+ redge
+ scoin 0.6249518
+ attach
+ set 9
+ create
+ rnode
+ clear
+ load
+ create
+ attach
+
+
+
+
+ PARETO FRONTS
+
+
+Pareto Front of Subpopulation 0
+Evaluated: T
+Fitness: [0.8134241 0.032539863 0.9873331 max]
+R=0 S=Infinity
+ swap
+ create
+ new
+ create
+ detach
+ swap
+ swap
+ clear
+ infl 0.08100885
+ save
+ attach
+ attach
+ redge
+ rewind 10,6
+ rewind 4,6
+ clear
+ attach
+ infl 0.84080964
+ rnode
+ create
+ scoin 0.027172208
+ set 7
+
+Evaluated: T
+Fitness: [0.9529584 0.27351984 0.8682165 max]
+R=0 S=Infinity
+ rnode
+ detach
+ rnode
+ scoin 0.12510872
+ infl 0.7862678
+ set 3
+ create
+ redge
+ swap
+ swap
+ attach
+ save
+ load
+ new
+ create
+ rnode
+ redge
+ scoin 0.6249518
+ attach
+ set 9
+ create
+ rnode
+ clear
+ load
+ create
+ attach
+
+Evaluated: T
+Fitness: [0.9673632 0.17179538 0.98346555 max]
+R=0 S=0.201596200466156
+ infl 0.76843196
+ create
+ create
+ load
+ set 8
+ set 1
+ create
+ attach
+ swap
+ swap
+ set 7
+ clear
+ new
+ redge
+ detach
+ rnode
+ scoin 0.14867753
+ infl 0.84080964
+ rnode
+ create
+ load
+ create
+
+Evaluated: T
+Fitness: [0.98152894 0.07806566 0.9840183 max]
+R=0 S=0.11222207546234131
+ create
+ redge
+ scoin 0.6249518
+ new
+ detach
+ infl 0.08100885
+ load
+ create
+ new
+ attach
+ infl 0.84080964
+ infl 0.7499836
+ create
+ load
+ rnode
+ attach
+ create
+
+Evaluated: T
+Fitness: [0.9955772 0.11268034 0.97183216 max]
+R=0 S=Infinity
+ create
+ new
+ infl 0.008771062
+ create
+ swap
+ attach
+ swap
+ clear
+ attach
+ detach
+ rnode
+ swap
+ attach
+ clearinf
+ set 5
+ redge
+ rewind 3,7
+ swap
+ set 5
+ create
+ load
+ create
+

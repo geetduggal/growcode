@@ -1,0 +1,33 @@
+; GROWCODE
+redge
+attach
+redge
+clear
+create
+set 9
+detach
+rnode
+detach
+create
+create
+clear
+clear
+scoin 0.87879765
+clear
+redge
+ronpaul
+ronpaul
+save
+redge
+save
+infl 0.7724606
+new
+detach
+rnode
+clear
+create
+detach
+detach
+rewind 2,8
+redge
+infl 0.6726145

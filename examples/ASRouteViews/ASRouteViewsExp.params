@@ -1,0 +1,127 @@
+# Copyright 2006 by Sean Luke and George Mason University
+# Licensed under the Academic Free License version 3.0
+# See the file "LICENSE" for more information
+
+# The parameters that were laid out in Tutorial 1 (see the documentation)
+
+verbosity	= 2
+
+breedthreads	= 1
+evalthreads	= 1
+#breedthreads	= 20
+#evalthreads	= 20
+seed.0		= time
+#seed.1		= time
+#seed.2		= time
+#seed.3		= time
+#seed.4		= time
+#seed.5		= time
+#seed.6		= time
+#seed.7		= time
+#seed.8		= time
+#seed.9		= time
+#seed.10	  = time
+#seed.11		= time
+#seed.12 	= time
+#seed.13 	= time
+#seed.14 	= time
+#seed.15 	= time
+#seed.16 	= time
+#seed.17 	= time
+#seed.18 	= time
+#seed.19 	= time
+#seed.20 	= time
+#seed.21 	= time
+#seed.22 	= time
+#seed.23 	= time
+#seed.24 	= time
+#seed.25 	= time
+#seed.26 	= time
+#seed.27 	= time
+
+state		= ec.simple.SimpleEvolutionState
+
+targetGraph     = examples/ASRouteViews/ASRouteViews.edg
+outputFile      = examples/ASRouteViews/ASRouteViews.grw
+numGrowIter	= 6472
+pop        		= ec.Population
+init       		= GrowCode.GCInitializer
+finish     		= GrowCode.GCFinisher
+#breed     		= ec.simple.SimpleBreeder
+breed = ec.multiobjective.nsga2.NSGA2Breeder
+#eval		= ec.simple.SimpleEvaluator
+eval = ec.multiobjective.nsga2.NSGA2Evaluator
+#stat		= ec.simple.SimpleStatistics
+stat    = ec.multiobjective.MultiObjectiveStatistics
+exch		= ec.simple.SimpleExchanger
+
+generations         		= 25
+quit-on-run-complete	= true
+checkpoint          		= false
+prefix              			= ec
+checkpoint-modulo   	= 1
+
+stat.file		= ASRouteViews.stat
+
+pop.subpops		= 1
+pop.subpop.0		= ec.Subpopulation
+
+pop.subpop.0.size             		= 150
+pop.subpop.0.duplicate-retries	= 100
+pop.subpop.0.species          		= ec.vector.GeneVectorSpecies
+
+#pop.subpop.0.species.fitness 	= ec.simple.SimpleFitness
+#pop.subpop.0.species.fitness 	= ec.multiobjective.MultiObjectiveFitness
+pop.subpop.0.species.fitness = ec.multiobjective.nsga2.NSGA2MultiObjectiveFitness
+pop.subpop.0.species.fitness.num-objectives = 3
+
+#multi.fitness.min = 0.0
+#multi.fitness.max = 1.0
+
+pop.subpop.0.species.ind	= ec.vector.GeneVectorIndividual
+pop.subpop.0.species.gene       = GrowCode.GCBit
+
+#breed.elite.0 = 10
+
+pop.subpop.0.species.genome-size	= 20
+#pop.subpop.0.species.min-initial-size           = 5
+#pop.subpop.0.species.max-initial-size           = 50
+pop.subpop.0.species.crossover-type	= two
+pop.subpop.0.species.likelihood         = 0.9
+#pop.subpop.0.species.crossover-prob	= 1.0
+pop.subpop.0.species.mutation-prob	= 0.3
+
+pop.subpop.0.species.pipe			= ec.vector.breed.VectorMutationPipeline
+pop.subpop.0.species.pipe.source.0		= ec.vector.breed.ListCrossoverPipeline
+#pop.subpop.0.species.pipe.source.0		= ec.vector.breed.VectorCrossoverPipeline
+pop.subpop.0.species.pipe.source.0.source.0	= ec.select.TournamentSelection
+pop.subpop.0.species.pipe.source.0.source.1	= ec.select.TournamentSelection
+#pop.subpop.0.species.pipe.source.0.source.0	= ec.multiobjective.nsga2.NSGA2TournamentSelection
+#pop.subpop.0.species.pipe.source.0.source.1	= ec.multiobjective.nsga2.NSGA2TournamentSelection
+
+#pop.subpop.0.species.genome-size	= 10
+##pop.subpop.0.species.min-initial-size           = 5
+##pop.subpop.0.species.max-initial-size           = 50
+#pop.subpop.0.species.crossover-type	= two
+#pop.subpop.0.species.likelihood         = 0.9
+##pop.subpop.0.species.crossover-prob	= 1.0
+##pop.subpop.0.species.mutation-prob	= 0.01
+#pop.subpop.0.species.mutation-prob	= 0.5
+#breed.multibreed.num-sources = 2
+#
+##pop.subpop.0.species.pipe			= ec.vector.breed.VectorMutationPipeline
+#pop.subpop.0.species.pipe			= ec.breed.MultiBreedingPipeline
+#pop.subpop.0.species.pipe.source.0		= ec.vector.breed.ListCrossoverPipeline
+#pop.subpop.0.species.pipe.source.0.prob		= .5
+##pop.subpop.0.species.pipe.source.0		= ec.vector.breed.VectorCrossoverPipeline
+#pop.subpop.0.species.pipe.source.0.source.0	= ec.select.TournamentSelection
+#pop.subpop.0.species.pipe.source.0.source.1	= ec.select.TournamentSelection
+#pop.subpop.0.species.pipe.source.1.prob		= .5
+#pop.subpop.0.species.pipe.source.1 = ec.breed.ReproductionPipeline
+#pop.subpop.0.species.pipe.source.1.source.0 = ec.select.BestSelection
+##pop.subpop.0.specie.pipe.source.1.source.0 = ec.select.FitProportionateSelection
+#pop.subpop.0.species.pipe.source.1.source.0.n = 5
+
+select.tournament.size		= 2
+
+eval.problem		= GrowCode.BestProgramProblem
